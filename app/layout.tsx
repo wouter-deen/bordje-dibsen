@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Merriweather_Sans } from "next/font/google";
 import "./globals.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-const interSans = Inter({
-    variable: "--font-inter-sans",
+const playfairDisplay = Merriweather_Sans({
+    variable: "--font-playfair-display",
     subsets: ["latin"],
 });
 
@@ -21,7 +21,7 @@ export default function RootLayout({
     return (
         <html lang="nl">
             <body
-                className={`${interSans.variable} antialiased bg-green-950 text-white`}
+                className={`${playfairDisplay.className} antialiased bg-green-950 text-white`}
             >
                 {children}
             </body>
