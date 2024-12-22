@@ -5,7 +5,7 @@ export default function ChoiceButton({
 }: {
     icon: string;
     href: string;
-    children: any;
+    children: React.ReactNode;
 }) {
     return (
         <a

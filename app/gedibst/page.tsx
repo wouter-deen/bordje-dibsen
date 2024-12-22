@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function Gedibst() {
     const [searchParams, setSearchParams] = useState<URLSearchParams>(
-        new URLSearchParams(window.location.search),
+        new URLSearchParams(),
     );
     const router = useRouter();
     useEffect(() => {
